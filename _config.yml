@@ -1,0 +1,12 @@
+# Site settings
+title: 於卓慧的宅基地
+email: agassi21@gmail.com
+description: "但愿每次回忆都不觉愧疚！"
+baseurl: ""
+url: "http://blog.yuzhuohui.info"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+timezone: Asia/Shanghai
