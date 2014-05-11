@@ -260,6 +260,13 @@ a:visited { color: #205caa; }
 
 .post pre.terminal code { background-color: #333; }
 
+pre .lineno {
+    border-right: 1px solid #DDD;
+    padding-right: 15px;
+    color: #999;
+    text-align: right;
+}
+
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
 
