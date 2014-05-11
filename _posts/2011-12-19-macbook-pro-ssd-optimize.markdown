@@ -125,7 +125,7 @@ mount | grep " /
 默认的在 MB/MBP 上, 系统会在磁盘上维护一个和内存等大的 sleepimage 文件, 当电量耗尽时将内存中所有数据写入磁盘, 系统进入深度休眠状态, 下次唤醒时再从磁盘文件恢复状态. SSD 寸土寸金, 保留一个 8GB 大小又很少被用到的文件是很奢侈的行为.
 </blockquote>
 
-{% highlight bash %}
+{% highlight bash linenos %}
 $ sudo pmset -a hibernatemode 0
 
 $ sudo rm /var/vm/sleepimage*
