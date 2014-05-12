@@ -7,7 +7,12 @@ url: "http://blog.yuzhuohui.info"
 twitter_username: agassi_yzh
 github_username: agassiyzh
 
-limit_posts: 5
+
+sass:
+  sass_dir: css
+  style: :compressed
+
+# limit_posts: 5
 # Build settings
 markdown: kramdown
 kramdown:
