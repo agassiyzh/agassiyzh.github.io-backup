@@ -6,8 +6,12 @@ baseurl: ""
 url: "http://blog.yuzhuohui.info"
 username: agassi_yzh
 
+limit_posts: 5
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+
 permalink: /:year/:month/:day/:title/index.html
 
 timezone: Asia/Shanghai
