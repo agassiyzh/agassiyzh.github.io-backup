@@ -44,10 +44,12 @@ published: true
 最后在[Trim enabler](http://www.groths.org/?p=308)的留言中我找到了这么一句话：
 
 <blockquote>
-TRIM is ALWAYS preferred over Garbage Collection and will likely yield better results. If you have garbage collection, you don’t necessarily need TRIM, but it’ll probably offer better performance and there’s always a chance there’ll be a degradation of speed over time. Therefore, when using Garbage Collection, you may have to take the drive out and do a secure erase so that everything is re-marked as free space.
-
+<p>TRIM is ALWAYS preferred over Garbage Collection and will likely yield better results. If you have garbage collection, you don’t necessarily need TRIM, but it’ll probably offer better performance and there’s always a chance there’ll be a degradation of speed over time. Therefore, when using Garbage Collection, you may have to take the drive out and do a secure erase so that everything is re-marked as free space.
+</p>
+<p>
 Running garbage collection and TRIM at the same time is NOT a problem. They’re designed to work together. You can look at it like so: TRIM is called by your OS each time space is freed up. Garbage Collection is run by the drive’s firmware when idle and determines which parts of the drive can be cleaned up and rearranged. TRIM is obviously more efficient and obviously the drive’s firmware is aware of the TRIM commands and accounts for this.
-All SSD manufacturers, GC or not, recommend the use of TRIM.
+</p>
+<p>All SSD manufacturers, GC or not, recommend the use of TRIM.</p>
 </blockquote>
 
 

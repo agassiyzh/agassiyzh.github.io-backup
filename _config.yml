@@ -4,6 +4,7 @@ email: agassi21@gmail.com
 description: "但愿每次回忆都不觉愧疚！"
 baseurl: ""
 url: "http://blog.yuzhuohui.info"
+username: agassi_yzh
 
 # Build settings
 markdown: kramdown
