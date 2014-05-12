@@ -7,6 +7,6 @@ url: "http://blog.yuzhuohui.info"
 
 # Build settings
 markdown: kramdown
-permalink: date
+permalink: /:year/:month/:day/:title/index.html
 
 timezone: Asia/Shanghai
