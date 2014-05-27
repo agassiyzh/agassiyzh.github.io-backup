@@ -12,7 +12,9 @@ sass:
   sass_dir: css
   style: :compressed
 
-#limit_posts: 5
+# limit_posts: 5
+paginate: 5
+page_path: "page:num"
 # Build settings
 markdown: kramdown
 kramdown:

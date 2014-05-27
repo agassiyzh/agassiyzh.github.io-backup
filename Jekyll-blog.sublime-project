@@ -5,5 +5,12 @@
 			"follow_symlinks": true,
 			"path": "."
 		}
-	]
+	],
+  "build_systems":
+  [
+    {
+      "name": "Jekyll Server",
+      "shell_cmd": "jekyll serve -w"
+    }
+  ]
 }
