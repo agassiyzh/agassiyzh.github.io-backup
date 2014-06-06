@@ -13,6 +13,8 @@ published: true
 
 3. [stackoverflow swift-language tag][stackoverflow]: 看看别人的问题和解答，初期很有帮助
 
+4. 中文入门BLog: [来自苹果的编程语言——Swift简介][lucida]
+
 ## project
 
 1. [`RxSwift`][RxSwift]: ReactiveCocoa作者新开的swift项目
@@ -30,3 +32,5 @@ published: true
 [CococapodsSwift]: https://medium.com/swift-programming/swift-cocoapods-da09d8ba6dd2
 
 [stackoverflow]: http://stackoverflow.com/questions/tagged/swift-language
+
+[lucida]: http://zh.lucida.me/blog/an-introduction-to-swift/
