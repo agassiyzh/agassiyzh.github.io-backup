@@ -15,6 +15,8 @@ published: true
 
 4. 中文入门BLog: [来自苹果的编程语言——Swift简介][lucida]
 
+5. Github swift语言排行趋势: [Swift trending repositories][github-trending]
+
 ## project
 
 1. [`RxSwift`][RxSwift]: ReactiveCocoa作者新开的swift项目
@@ -34,3 +36,5 @@ published: true
 [stackoverflow]: http://stackoverflow.com/questions/tagged/swift-language
 
 [lucida]: http://zh.lucida.me/blog/an-introduction-to-swift/
+
+[github-trending]: https://github.com/trending?l=swift
