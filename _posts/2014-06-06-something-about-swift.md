@@ -11,6 +11,8 @@ published: true
 
 2. [Cocoapods with swift][CococapodsSwift]: Swift项目中集成Cocoapods
 
+3. [stackoverflow swift-language tag][stackoverflow]: 看看别人的问题和解答，初期很有帮助
+
 ## project
 
 1. [`RxSwift`][RxSwift]: ReactiveCocoa作者新开的swift项目
@@ -26,3 +28,5 @@ published: true
 [RxSwift]: https://github.com/jspahrsummers/RxSwift
 
 [CococapodsSwift]: https://medium.com/swift-programming/swift-cocoapods-da09d8ba6dd2
+
+[stackoverflow]: http://stackoverflow.com/questions/tagged/swift-language
