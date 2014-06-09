@@ -17,6 +17,10 @@ published: true
 
 5. Github swift语言排行趋势: [Swift trending repositories][github-trending]
 
+6. 一个专门介绍swift编程的blog: [swift-iOS][swift-iOS]
+
+7. [WWDC14 Sessions HD Videos][HDVideos]
+
 ## project
 
 1. [`RxSwift`][RxSwift]: ReactiveCocoa作者新开的swift项目
@@ -38,3 +42,7 @@ published: true
 [lucida]: http://zh.lucida.me/blog/an-introduction-to-swift/
 
 [github-trending]: https://github.com/trending?l=swift
+
+[swift-iOS]: http://swift-ios.co
+
+[HDVideos]: /2014/06/09/WWDC-2014-HD-Videos/index.html

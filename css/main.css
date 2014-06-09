@@ -341,6 +341,10 @@ a {
   .post-content ul, .post-content ol {
     padding-left: 20px; }
 
+.post-content img {
+  max-width: 100%
+}
+
 .post pre {
   border: 1px solid #d5d5e9;
   background-color: #eeeeff;
