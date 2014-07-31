@@ -9,7 +9,7 @@ github_username: agassiyzh
 
 
 sass:
-  sass_dir: css
+  sass_dir: _sass
   style: :compressed
 
 # limit_posts: 5
