@@ -5,7 +5,7 @@ date: 2012-08-10 17:10
 comments: true
 categories: 
 ---
->	用了[Bootstrap][]你很难把页面写难看了。
+>	用了[Bootstrap][Bootstrap]你很难把页面写难看了。
 
 我觉得这个评价还是中肯的。尝试玩了一下[Bootstrap][]，默认的配色什么的都挺符合我的审美。
 
