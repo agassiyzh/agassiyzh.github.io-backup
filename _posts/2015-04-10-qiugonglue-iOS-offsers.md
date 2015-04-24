@@ -105,8 +105,8 @@ published: true
 7. 熟悉一门脚本语言(shell/python/ruby...)
 
 ### 减分项
-
 1. 使用baidu搜索
+
 ## 简历投递
 yosemite@qiugonglue.com
 
