@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "照片同步服务（iCloud Drive照片同步服务使用报告）"
+title: "照片同步服务－－iCloud Drive照片同步服务使用报告"
 date: 2015-08-13 01:15
 comments: true
 published: true
