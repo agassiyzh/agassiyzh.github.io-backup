@@ -15,9 +15,9 @@ sass:
 paginate: 5
 page_path: "page:num"
 # Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
+markdown: redcarpet
+redcarpet:
+    extensions: ["tables"]
 
 permalink: /:year/:month/:day/:title/index.html
 
