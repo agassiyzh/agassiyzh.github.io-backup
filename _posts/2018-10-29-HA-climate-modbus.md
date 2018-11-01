@@ -3,6 +3,7 @@ layout: "post"
 title: "ModBus 空调组件及中央空调接入 Home Assistant 细节"
 date: "2018-10-29 19:24"
 comments: true
+published: false
 ---
 玩Home Assistant有一段日子了。一直想把家里的中央空调接入进去。无意间Google到`Yonsm`老师的blog好像看到了一线希望：[《ModBus 空调组件及中央空调接入 Home Assistant 简述》](1)。
 
