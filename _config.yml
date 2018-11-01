@@ -70,6 +70,9 @@ plugins:
  - jemoji
  - jekyll-sitemap
  - jekyll-feed
+ - jekyll-remote-theme
+
+remote_theme: Simpleyyt/jekyll-theme-next
 
 # ---------------------------------------------------------------
 # Site Information Settings
