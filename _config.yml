@@ -20,16 +20,16 @@ permalink: /:year/:month/:day/:title/
 
 # Pagination
 paginate: 10
-#paginate_path: "/page:num/"
-#archive:
-  #paginate: 10
-  #paginate_path: "/page:num/"
-#category:
-  #paginate: 10
-  #paginate_path: "/page:num/"
-#tag:
-  #paginate: 10
-  #paginate_path: "/page:num/"
+paginate_path: "/page:num/"
+archive:
+  paginate: 10
+  paginate_path: "/page:num/"
+category:
+  paginate: 10
+  paginate_path: "/page:num/"
+tag:
+  paginate: 10
+  paginate_path: "/page:num/"
 
 # Handling Reading
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", "vendor"]
@@ -108,7 +108,7 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true 
 
 # If true, will add site-subtitle to index page, added in jekyll config.
 # subtitle: Subtitle
@@ -711,8 +711,9 @@ css: assets/css
 js: assets/js
 images: assets/images
 
-reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+reward_comment: 觉得文章有用，给我买杯咖啡？
 alipay: /images/alipay.jpg
+wechatpay: /images/wechatpay.jpg
 
 # Theme version
 version: 5.1.1
