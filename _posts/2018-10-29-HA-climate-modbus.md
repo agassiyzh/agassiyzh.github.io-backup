@@ -10,14 +10,19 @@ published: false
 于是按照文章和论坛中讨论的指引购入了相关的模块。由于第一次玩modbus这个工业互联协议，中间也走了不少弯路。这里对[《ModBus 空调组件及中央空调接入 Home Assistant 简述》][1]没有提及的细节做一个补充.
 
 开始之前首先要在心理上做好打持久战的准备 \^_\^
-<!--放解释图片，智能网关，modbus tcp服务器-->
+
 
 ## 需要材料
+1. modbus空调网关
+2. 网关电源
+3. 万用表（测电源极性）
+4. modbus 转TCP串口服务器
+
+<!--放解释图片，智能网关，modbus tcp服务器-->
 
 ## 12V变压器正负极
 
 空调智能网关的电源接口是一对正负极的接线端子，电压12V-24V。发货过来买有配电源。我把家里闲置的交换机电源剪掉DC接头，剥出两根正负极电源线插进去。
-
 
 问题是是直流电源，我并不知道哪一根是正极哪一根是负极。线的胶皮上有一根是黑白相间的，有一根是全黑的。我想应该有一个工业标准来规定线的正负极。Google之后众说纷纭。问了卖家技术指导：
 
@@ -62,15 +67,25 @@ published: false
 
 串口相关设置可以参考截图。
 
-<!--w610 config1-->
+![w610 config1](/images/HA-climate-modbus/modbus_server_config_1.png)
 
-<!--w610 config2-->
-
+![w610 config2](/images/HA-climate-modbus/modbus_server_config_2.png)
 ## modbuspoll配置
 
 前面有提到modbuspoll 连接设置里面模式选择`modbus TCP <=> modbus RTU`，填写好串口服务器IP和端口地址就可以了。
 
-modbus协议地址可以通过在modbuspoll中
+modbus协议地址可以通过在modbuspoll中设置`Read/Write Definition`来获取。
+
+具体做法：新建窗口 ➡️️ 右键菜单`Read/Write Definition` ➡️️  `Function`选不同的地址段位，`Quantity`可以输入最大值 125。
+
+<!—p1—>
+<!—p2—>
+<!—p3—>
+
+我这里有一个快捷方式，修改地址就能用。
+
+<!—file—>
+
 
 ## 信号线
 
@@ -80,7 +95,8 @@ modbus协议地址可以通过在modbuspoll中
 
 ## 空调线路
 
-<!--线路图--> <!--实际拍摄-->
+<!--线路图-->
+<!--实际拍摄-->
 
 Yonsm老师说接空调线路是最麻烦的。不过他也在文中提到了只要`接空调的F1、F2（空调的第三、第四接口）端子到空调网关U3的A、B接口就可以了`。
 
