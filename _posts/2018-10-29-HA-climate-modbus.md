@@ -3,8 +3,9 @@ layout: "post"
 title: "ModBus 空调组件及中央空调接入 Home Assistant 细节"
 date: "2018-10-29 19:24"
 comments: true
-published: false
+published: flase
 ---
+
 玩Home Assistant有一段日子了。一直想把家里的中央空调接入进去。无意间Google到`Yonsm`老师的blog好像看到了一线希望：[《ModBus 空调组件及中央空调接入 Home Assistant 简述》][1]。
 
 于是按照文章和论坛中讨论的指引购入了相关的模块。由于第一次玩modbus这个工业互联协议，中间也走了不少弯路。这里对[《ModBus 空调组件及中央空调接入 Home Assistant 简述》][1]没有提及的细节做一个补充.
@@ -13,24 +14,19 @@ published: false
 
 
 ## 需要材料
+
 1. modbus空调网关
 2. 网关电源
 3. 万用表（测电源极性）
 4. modbus 转TCP串口服务器
 
-<!--放解释图片，智能网关，modbus tcp服务器-->
+![tools](/images/HA-climate-modbus/tools.jpeg)
 
 ## 12V变压器正负极
-
-空调智能网关的电源接口是一对正负极的接线端子，电压12V-24V。发货过来买有配电源。我把家里闲置的交换机电源剪掉DC接头，剥出两根正负极电源线插进去。
-
-问题是是直流电源，我并不知道哪一根是正极哪一根是负极。线的胶皮上有一根是黑白相间的，有一根是全黑的。我想应该有一个工业标准来规定线的正负极。Google之后众说纷纭。问了卖家技术指导：
-
-<!--聊天截图1-->
+![](/images/HA-climate-modbus/wechat1.png){:style="width:100px;float: right;margin-right: 7px;margin-top: 7px; margin-left: 15px;"}
+空调智能网关的电源接口是一对正负极的接线端子，电压12V-24V。发货过来买有配电源。我把家里闲置的交换机电源剪掉DC接头，剥出两根正负极电源线插进去。问题是是直流电源，我并不知道哪一根是正极哪一根是负极。线的胶皮上有一根是黑白相间的，有一根是全黑的。我想应该有一个工业标准来规定线的正负极。Google之后众说纷纭。问了卖家技术指导：
 
 保险起见还是在马云家买了个万用表测了电源正负极，接通连上。
-
-<!--万用表-->
 
 
 ## 如何获取modbus协议地址
@@ -45,15 +41,17 @@ published: false
 
 ![modbus light](/images/HA-climate-modbus/modbus_light.png)
 
+![](/images/HA-climate-modbus/wechat2.png){:style="width:100px;float: right;margin-right: 7px;margin-top: 7px; margin-left: 15px;"}
+
 问了店家后确认是批次问题，有些批次是红灯正常的。。。emmmm只能抱着将信将疑的态度继续调试了。
 
-<!--wechat-->
+
 
 ## 空调智能网关调试
 
 为了确定我收到的网关是否有故障，按照技术指导的提醒可以直接把网关连到电脑的串口。由于我身边的电脑都是Mac，只能又在马老板家买了USB转RS 232，特地选了带串口RS 232转485的。
 
-<!--串口图片-->
+![](/images/HA-climate-modbus/adapter_tb.png)
 
 按照说明连好线路，设置好串口和modbuspoll，在可以在5xxx的地址段看到数据表示空调网关可以正常工作。
 
@@ -67,9 +65,12 @@ published: false
 
 串口相关设置可以参考截图。
 
-![w610 config1](/images/HA-climate-modbus/modbus_server_config_1.png)
+<div style="width: 100%;display: flex;display: -webkit-flex;">
+<div style="width: 40%" ><img src="/images/HA-climate-modbus/modbus_server_config_1.png" /> </div>
+<div style="width: 48%" ><img src="/images/HA-climate-modbus/modbus_server_config_2.png" /> </div>
+</div>
 
-![w610 config2](/images/HA-climate-modbus/modbus_server_config_2.png)
+
 ## modbuspoll配置
 
 前面有提到modbuspoll 连接设置里面模式选择`modbus TCP <=> modbus RTU`，填写好串口服务器IP和端口地址就可以了。
@@ -78,25 +79,27 @@ modbus协议地址可以通过在modbuspoll中设置`Read/Write Definition`来�
 
 具体做法：新建窗口 ➡️️ 右键菜单`Read/Write Definition` ➡️️  `Function`选不同的地址段位，`Quantity`可以输入最大值 125。
 
-<!—p1—>
-<!—p2—>
-<!—p3—>
+<div style="width: 100%;display: flex;display: -webkit-flex;">
+    <div style="width: 100%"><img src="/images/HA-climate-modbus/modbuspoll1.jpeg"></div>
+    <div style="width: 48%"><img src="/images/HA-climate-modbus/modbuspoll2.jpeg"></div>
+    <div  style="width: 48%"><img src="/images/HA-climate-modbus/modbuspoll3.jpeg"></div>
+</div>
 
 我这里有一个快捷方式，修改地址就能用。
 
-<!—file—>
+[modbuspoll 快捷方式](/files/Modbus-Poll测试数据.rar)
 
 
 ## 信号线
 
 一开始用DC电源上剪下来的线作为信号线，但是屡次失败后怀疑是线材的问题。问了店家技术指导说短距离应该么问题。保险起见我还是在马云家买了标准的信号线材，跟空调公司的一样。分别买了0.5平和1平的，实际使用发现0.5平正好。
 
-<!--信号线材淘宝-->
+![](/images/HA-climate-modbus/line_tb.png)
 
 ## 空调线路
 
-<!--线路图-->
-<!--实际拍摄-->
+![](/images/HA-climate-modbus/circuit_diagram.jpeg)
+![](/images/HA-climate-modbus/interface.jpeg)
 
 Yonsm老师说接空调线路是最麻烦的。不过他也在文中提到了只要`接空调的F1、F2（空调的第三、第四接口）端子到空调网关U3的A、B接口就可以了`。
 
@@ -108,6 +111,19 @@ Yonsm老师说接空调线路是最麻烦的。不过他也在文中提到了只
 如果你手上正好有串口转modbus 485的模块，可以先连上调试一下。看一下modbuspoll 中5xxx段有没有数据。
 
 否则可以先连接好串口服务器和空调智能网关，配置好串口服务器后。通过wifi在modbus中取到5xxx段的数据（一般来说两个硬件不会有问题）。然后把空调连上空调网关U3端口，通过wifi取到对应的协议地址。
+
+<div style="width: 100%;display: flex;display: -webkit-flex;">
+    <!-- <video style="width:480px;margin: 0 auto;display:block;" src="/images/HA-climate-modbus/siri.mp4" controls="controls"/> -->
+    <div style="width:66%;">
+        <video style="width:95%;" src="/images/HA-climate-modbus/siri.mp4" controls="controls">
+        </video>
+    </div>
+    <div style="width:32%;">
+        <img src="/images/HA-climate-modbus/HA1.png"/>
+        <img src="/images/HA-climate-modbus/HA2.png"/>
+    </div>
+</div>
+
 
 
 
