@@ -41,7 +41,7 @@ published: flase
 
 ![modbus light](/images/HA-climate-modbus/modbus_light.png)
 
-![](/images/HA-climate-modbus/wechat2.png){:style="width:100px;float: right;margin-right: 7px;margin-top: 7px; margin-left: 15px;"}
+![](/images/HA-climate-modbus/wechat2.png){:style="width:80px;float: right;margin-right: 7px;margin-top: 7px; margin-left: 15px;"}
 
 问了店家后确认是批次问题，有些批次是红灯正常的。。。emmmm只能抱着将信将疑的态度继续调试了。
 
@@ -51,7 +51,7 @@ published: flase
 
 为了确定我收到的网关是否有故障，按照技术指导的提醒可以直接把网关连到电脑的串口。由于我身边的电脑都是Mac，只能又在马老板家买了USB转RS 232，特地选了带串口RS 232转485的。
 
-![](/images/HA-climate-modbus/adapter_tb.png)
+![](/images/HA-climate-modbus/adapter_tb.png){:style="width:60px;float: left;margin-right: 7px;margin-top: 7px; margin-left: 15px;"}
 
 按照说明连好线路，设置好串口和modbuspoll，在可以在5xxx的地址段看到数据表示空调网关可以正常工作。
 
@@ -79,10 +79,10 @@ modbus协议地址可以通过在modbuspoll中设置`Read/Write Definition`来�
 
 具体做法：新建窗口 ➡️️ 右键菜单`Read/Write Definition` ➡️️  `Function`选不同的地址段位，`Quantity`可以输入最大值 125。
 
-<div style="width: 100%;display: flex;display: -webkit-flex;">
+<div style="width: 100%;display: flex;display: -webkit-flex; flex-wrap: wrap;">
     <div style="width: 100%"><img src="/images/HA-climate-modbus/modbuspoll1.jpeg"></div>
-    <div style="width: 48%"><img src="/images/HA-climate-modbus/modbuspoll2.jpeg"></div>
-    <div  style="width: 48%"><img src="/images/HA-climate-modbus/modbuspoll3.jpeg"></div>
+    <div style="width: 50%"><img src="/images/HA-climate-modbus/modbuspoll2.jpeg"></div>
+    <div  style="width: 50%"><img src="/images/HA-climate-modbus/modbuspoll3.jpeg"></div>
 </div>
 
 我这里有一个快捷方式，修改地址就能用。
@@ -92,14 +92,16 @@ modbus协议地址可以通过在modbuspoll中设置`Read/Write Definition`来�
 
 ## 信号线
 
-一开始用DC电源上剪下来的线作为信号线，但是屡次失败后怀疑是线材的问题。问了店家技术指导说短距离应该么问题。保险起见我还是在马云家买了标准的信号线材，跟空调公司的一样。分别买了0.5平和1平的，实际使用发现0.5平正好。
+![](/images/HA-climate-modbus/line_tb.png){:style="width:100px;float: right;margin-right: 7px;margin-top: 7px; margin-left: 15px;"}
 
-![](/images/HA-climate-modbus/line_tb.png)
+一开始用DC电源上剪下来的线作为信号线，但是屡次失败后怀疑是线材的问题。问了店家技术指导说短距离应该么问题。保险起见我还是在马云家买了标准的信号线材，跟空调公司的一样。分别买了0.5平和1平的，实际使用发现0.5平正好。
 
 ## 空调线路
 
-![](/images/HA-climate-modbus/circuit_diagram.jpeg)
-![](/images/HA-climate-modbus/interface.jpeg)
+<div style="width: 100%;display: flex;display: -webkit-flex; flex-wrap: wrap;">
+    <div style="width: 50%"><img src="/images/HA-climate-modbus/circuit_diagram.jpeg"></div>
+    <div  style="width: 50%"><img src="/images/HA-climate-modbus/interface.jpeg"></div>
+</div>
 
 Yonsm老师说接空调线路是最麻烦的。不过他也在文中提到了只要`接空调的F1、F2（空调的第三、第四接口）端子到空调网关U3的A、B接口就可以了`。
 
