@@ -17,8 +17,8 @@ compass的sprite功能超级好用的。之前我们做网页为了减少一个�
 
 顺便学了一下Ruby，rake神马的。
 
-[Octopress]: http://octopress.org
-[1]: http://compass-style.org/help/tutorials/spriting/
+[Octopress]: https://octopress.org
+[1]: https://compass-style.org/help/tutorials/spriting/
 [bootstrap-sass]: https://github.com/thomas-mcdonald/bootstrap-sass/
-[BootStrap]: http://twitter.github.com/bootstrap/
-[Compass]: http://compass-style.org
+[BootStrap]: https://twitter.github.com/bootstrap/
+[Compass]: https://compass-style.org

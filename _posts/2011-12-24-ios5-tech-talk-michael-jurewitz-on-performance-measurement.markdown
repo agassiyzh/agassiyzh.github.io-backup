@@ -6,7 +6,7 @@ comments: true
 published: true
 categories: 
 ---
-英文原文：http://oleb.net/blog/2011/11/ios5-tech-talk-michael-jurewitz-on-performance-measurement/
+英文原文：https://oleb.net/blog/2011/11/ios5-tech-talk-michael-jurewitz-on-performance-measurement/
 
 这篇文章的来源是iOS5 Tech talk在柏林站的演讲。演讲者是Michael Jruewitz。
 
@@ -122,10 +122,10 @@ Core Animation instrument会用黄色突出显示缩放过的内容。并不是�
 
 
 
-[1]: http://pic.yupoo.com/agassi/BCeqjj47/flBAA.png
-[instruments-time-profiler-options]: http://pic.yupoo.com/agassi/BCeqjgaL/medish.jpg
-[instruments-timeprofiler-call-tree]: http://pic.yupoo.com/agassi/BCeqjkY3/medish.jpg
-[instruments-memory-usage]: http://pic.yupoo.com/agassi/BCeqjxrt/medish.jpg
-[instruments-activity-monitor-options]: http://pic.yupoo.com/agassi/BCeqiKep/medish.jpg
-[instruments-allocations-options]: http://pic.yupoo.com/agassi/BCeqj7if/medish.jpg
-[instruments-coreanimation-options]: http://pic.yupoo.com/agassi/BCeqiVJi/medish.jpg
+[1]: https://pic.yupoo.com/agassi/BCeqjj47/flBAA.png
+[instruments-time-profiler-options]: https://pic.yupoo.com/agassi/BCeqjgaL/medish.jpg
+[instruments-timeprofiler-call-tree]: https://pic.yupoo.com/agassi/BCeqjkY3/medish.jpg
+[instruments-memory-usage]: https://pic.yupoo.com/agassi/BCeqjxrt/medish.jpg
+[instruments-activity-monitor-options]: https://pic.yupoo.com/agassi/BCeqiKep/medish.jpg
+[instruments-allocations-options]: https://pic.yupoo.com/agassi/BCeqj7if/medish.jpg
+[instruments-coreanimation-options]: https://pic.yupoo.com/agassi/BCeqiVJi/medish.jpg

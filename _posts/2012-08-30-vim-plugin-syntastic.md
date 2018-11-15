@@ -34,9 +34,9 @@ $git merge rbrown/fix_php_53_and_54
 瞧第二行的红叉！
 ![screen shot][screen shot]
 
-[tx]: http://twitter.com/tualatrix 
-[syntastic]: http://https://github.com/scrooloose/syntastic
+[tx]: https://twitter.com/tualatrix 
+[syntastic]: https://https://github.com/scrooloose/syntastic
 [vandle]: https://github.com/gmarik/vundle
 [#320]: https://github.com/scrooloose/syntastic/pull/320
 [a26d3ae]: https://github.com/rbrown/syntastic/commit/a26d3aef58a26f2b47ef994f93ce2cf0b2cd06aa
-[screen shot]:http://pic.yupoo.com/agassi/CeiZsZ5U/11aOIG.png
+[screen shot]:https://pic.yupoo.com/agassi/CeiZsZ5U/11aOIG.png

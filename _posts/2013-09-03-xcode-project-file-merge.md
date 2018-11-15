@@ -53,5 +53,5 @@ mv $tempfile $projectfile
 当然了，也可以人肉merge，今天我用vim的%查找匹配的`{`和`}`。可以比较快速的定位，从最后一个`}`开始查找。
 
 
-[sof]: http://stackoverflow.com/questions/2615378/how-to-use-git-properly-with-xcode?answertab=active#tab-top
-[blockquoteTom]: http://stackoverflow.com/questions/2615378/how-to-use-git-properly-with-xcode?answertab=active#comment2626908_2615378
+[sof]: https://stackoverflow.com/questions/2615378/how-to-use-git-properly-with-xcode?answertab=active#tab-top
+[blockquoteTom]: https://stackoverflow.com/questions/2615378/how-to-use-git-properly-with-xcode?answertab=active#comment2626908_2615378

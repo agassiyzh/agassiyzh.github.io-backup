@@ -26,4 +26,4 @@ categories:
 同时这个问题在[segmentfault][segmentfault]提问了。移步可以去看看别人的讨论。
 
 
-[segmentfault]: http://http://segmentfault.com/q/1010000000116642
+[segmentfault]: https://https://segmentfault.com/q/1010000000116642

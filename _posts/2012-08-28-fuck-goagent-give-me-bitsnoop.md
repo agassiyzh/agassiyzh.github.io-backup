@@ -52,7 +52,7 @@ function FindProxyForURL(url, host) {
 
 然后我打算看看GoAgentX的源码，加个第二代理的设置进去。
 
-[ohdarling88]: http://twitter.com/ohdarling88
+[ohdarling88]: https://twitter.com/ohdarling88
 [GoAgentx]: https://github.com/ohdarling/GoAgentX
 [GUI]: https://raw.github.com/ohdarling/GoAgentX/master/Screenshot.png
-[bitsnoop]: http://bitsnoop.com
+[bitsnoop]: https://bitsnoop.com

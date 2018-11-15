@@ -38,4 +38,4 @@ fatal error: invalid virtual filesystem overlay file '/[Long-path-goes-here]/all
 
 目前没有更好的解决办法，只能等Apple 下次更新了。不知道在beta4之前会不会发布一个紧急修正版。
 
-[stackoverflow]: http://stackoverflow.com/questions/24622650/xcode-6-beta-3-invalid-virtual-filesystem-overlay-file
+[stackoverflow]: https://stackoverflow.com/questions/24622650/xcode-6-beta-3-invalid-virtual-filesystem-overlay-file

@@ -27,7 +27,7 @@ comments: true
 
 组建Fusion Drive其实很简单，前提是你要会使用命令行。具体操作可以参考MacWorld的这片文章：
 
-> [How to make your own Fusion Drive](http://www.macworld.com/article/2014011/storage-drives/how-to-make-your-own-fusion-drive.html)
+> [How to make your own Fusion Drive](https://www.macworld.com/article/2014011/storage-drives/how-to-make-your-own-fusion-drive.html)
 
 ## Trim enable
 
@@ -39,7 +39,7 @@ OS X 10.10.4开始系统中多了trimforce命令。算是Apple官方允许第三
 sudo trimforce enable
 ```
 
-参考：[osxdaily:How to Enable TRIM on Third Party SSDs in Mac OS X with trimforce](http://osxdaily.com/2015/10/29/use-trimforce-trim-ssd-mac-os-x/)
+参考：[osxdaily:How to Enable TRIM on Third Party SSDs in Mac OS X with trimforce](https://osxdaily.com/2015/10/29/use-trimforce-trim-ssd-mac-os-x/)
 
 ## 胶水
 
@@ -75,7 +75,7 @@ sudo trimforce enable
 
 [^3]: 我在上面装的是windows10
 
-[feng]: http://bbs.feng.com/read-htm-tid-8976690.html
+[feng]: https://bbs.feng.com/read-htm-tid-8976690.html
 
 [itgonglun]: https://ipn.li/itgonglun/
 

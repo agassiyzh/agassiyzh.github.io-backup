@@ -41,4 +41,4 @@ NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:CLIENT_NAME withExtensi
 #endif
 {% endhighlight %}
 
-[stackoverfolow]: http://stackoverflow.com/questions/3067015/ocunit-nsbundle?answertab=active#tab-top
+[stackoverfolow]: https://stackoverflow.com/questions/3067015/ocunit-nsbundle?answertab=active#tab-top

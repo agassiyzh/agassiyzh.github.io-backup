@@ -110,20 +110,20 @@ published: true
 ## 简历投递
 yosemite@qiugonglue.com
 
-[image-1]:	http://pic.yupoo.com/agassi/EyUMEHHX/medish.jpg
-[image-2]:	http://pic.yupoo.com/agassi/EyUMv5oJ/medish.jpg
-[image-4]:	http://pic.yupoo.com/agassi/EyURdp7D/medish.jpg
-[image-5]:	http://pic.yupoo.com/agassi/EyUMBdgC/medish.jpg
-[image-6]:	http://pic.yupoo.com/agassi/EyUMWM8W/medish.jpg
-[image-7]:	http://pic.yupoo.com/agassi/EyUMMS4R/medish.jpg
-[image-8]:	http://pic.yupoo.com/agassi/EyUNwCZM/medish.jpg
-[image-9]:	http://pic.yupoo.com/agassi/EyUNy8Xa/medish.jpg
-[image-10]:	http://pic.yupoo.com/agassi/EyUNESkK/medish.jpg
-[image-11]:	http://pic.yupoo.com/agassi/EyUNIlAN/medish.jpg
-[image-12]:	http://pic.yupoo.com/agassi/EyUN57eB/medish.jpg
-[image-13]:	http://pic.yupoo.com/agassi/EyUN2dXF/medish.jpg
-[image-14]:	http://pic.yupoo.com/agassi/EyUMYdAR/medish.jpg
-[image-15]:	http://pic.yupoo.com/agassi/EyUMzdud/medish.jpg
-[image-16]:	http://pic.yupoo.com/agassi/EyUMrsMA/medish.jpg
-[image-17]:	http://pic.yupoo.com/agassi/EyUMRZcs/medish.jpg
-[image-18]:	http://pic.yupoo.com/agassi/EyUMPl5y/medish.jpg
+[image-1]:	https://pic.yupoo.com/agassi/EyUMEHHX/medish.jpg
+[image-2]:	https://pic.yupoo.com/agassi/EyUMv5oJ/medish.jpg
+[image-4]:	https://pic.yupoo.com/agassi/EyURdp7D/medish.jpg
+[image-5]:	https://pic.yupoo.com/agassi/EyUMBdgC/medish.jpg
+[image-6]:	https://pic.yupoo.com/agassi/EyUMWM8W/medish.jpg
+[image-7]:	https://pic.yupoo.com/agassi/EyUMMS4R/medish.jpg
+[image-8]:	https://pic.yupoo.com/agassi/EyUNwCZM/medish.jpg
+[image-9]:	https://pic.yupoo.com/agassi/EyUNy8Xa/medish.jpg
+[image-10]:	https://pic.yupoo.com/agassi/EyUNESkK/medish.jpg
+[image-11]:	https://pic.yupoo.com/agassi/EyUNIlAN/medish.jpg
+[image-12]:	https://pic.yupoo.com/agassi/EyUN57eB/medish.jpg
+[image-13]:	https://pic.yupoo.com/agassi/EyUN2dXF/medish.jpg
+[image-14]:	https://pic.yupoo.com/agassi/EyUMYdAR/medish.jpg
+[image-15]:	https://pic.yupoo.com/agassi/EyUMzdud/medish.jpg
+[image-16]:	https://pic.yupoo.com/agassi/EyUMrsMA/medish.jpg
+[image-17]:	https://pic.yupoo.com/agassi/EyUMRZcs/medish.jpg
+[image-18]:	https://pic.yupoo.com/agassi/EyUMPl5y/medish.jpg

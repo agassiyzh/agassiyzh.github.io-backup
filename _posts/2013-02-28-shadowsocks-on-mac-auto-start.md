@@ -22,9 +22,9 @@ tags: shadowsocks
 把脚本放在`~/Library/LaunchAgents`就可以了。
 
 
-[v2ex]: http://www.v2ex.com/t/61258?r=agassi_yzh
+[v2ex]: https://www.v2ex.com/t/61258?r=agassi_yzh
 [clowwindy]: https://twitter.com/clowwindy
-[shadowsocks]: http://www.shadowsocks.com
+[shadowsocks]: https://www.shadowsocks.com
 [ohdarling88]: https://twitter.com/ohdarling88
 [goagentx]: https://github.com/ohdarling/GoAgentX
 [Python]: https://github.com/clowwindy/shadowsocks

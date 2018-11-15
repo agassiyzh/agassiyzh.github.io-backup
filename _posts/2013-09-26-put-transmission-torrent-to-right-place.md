@@ -13,15 +13,15 @@ PS：XBMC太好用了不知道的Google吧。
 
 这是手机XBMC的截图，各种信息很全
 
-![剧集列表](http://pic.yupoo.com/agassi/DbVjR445/medish.jpg)
+![剧集列表](https://pic.yupoo.com/agassi/DbVjR445/medish.jpg)
 
-![选择单集观看](http://pic.yupoo.com/agassi/DbVjR8Nn/medish.jpg)
+![选择单集观看](https://pic.yupoo.com/agassi/DbVjR8Nn/medish.jpg)
 
-![单集信息](http://pic.yupoo.com/agassi/DbVjRcbN/medish.jpg)
+![单集信息](https://pic.yupoo.com/agassi/DbVjRcbN/medish.jpg)
 
-![演员信息](http://pic.yupoo.com/agassi/DbVjWkp7/medish.jpg)
+![演员信息](https://pic.yupoo.com/agassi/DbVjWkp7/medish.jpg)
 
-![控制面板](http://pic.yupoo.com/agassi/DbVjVMhU/medish.jpg)
+![控制面板](https://pic.yupoo.com/agassi/DbVjVMhU/medish.jpg)
 
 我现在的存放结构是这样的
 
@@ -93,6 +93,6 @@ echo $name| grep -Ei "s[0-9]+e[0-9]+"
 脚本还有不足的地方欢迎大家指导。
 
 {% gist 6713607 %}
-[filter]: http://bbs.htpc1.com/thread-65704-1-5.html
-[YYETS]: http://www.yyets.com
+[filter]: https://bbs.htpc1.com/thread-65704-1-5.html
+[YYETS]: https://www.yyets.com
 

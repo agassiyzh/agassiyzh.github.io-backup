@@ -22,11 +22,11 @@ categories: xcode
 
 1. __在原有的target的基础上创建一个target__
 
-![duplicate target](http://pic.yupoo.com/agassi/C5olB7VL/medish.jpg)
+![duplicate target](https://pic.yupoo.com/agassi/C5olB7VL/medish.jpg)
 
 选择在工程文件在原来的的target上右击，在弹出菜单中选择```Duplate```(或者选中需要复制觉得target按⌘+D)。
 
-![need iPad](http://pic.yupoo.com/agassi/C5olBgIi/medish.jpg)
+![need iPad](https://pic.yupoo.com/agassi/C5olBgIi/medish.jpg)
 
 然后有一个弹出窗口，让你选择是否创建为iPad的target。如果不需要选择Duplicate only。
 
@@ -34,12 +34,12 @@ categories: xcode
 
 2. __创建一个新的target__
 
-![Add target](http://pic.yupoo.com/agassi/C5AFn0W4/medish.jpg)
+![Add target](https://pic.yupoo.com/agassi/C5AFn0W4/medish.jpg)
 选择Add target,就可以创建一个新的target了。
 
 ## 设置宏
 
-![Macros](http://pic.yupoo.com/agassi/C5AFn8n5/medish.jpg)
+![Macros](https://pic.yupoo.com/agassi/C5AFn8n5/medish.jpg)
 
 
 给不同的target添加不同的预处理宏，这样就可以给不同的target添加不同的实现了。
@@ -68,11 +68,11 @@ categories: xcode
 
 注意在编码和编译的时候选择需要的target
 
-![select target](http://pic.yupoo.com/agassi/C5AFnekO/medish.jpg)
+![select target](https://pic.yupoo.com/agassi/C5AFnekO/medish.jpg)
 
 如果选择的是PRO那么在编码的时候LITE段中的代码是不会又提示的。事实上这个时候XCode是忽略这部分代码的。
 
 
-![example](http://ww4.sinaimg.cn/large/6f995f46gw1dukwnndh9qj.jpg)
+![example](https://ww4.sinaimg.cn/large/6f995f46gw1dukwnndh9qj.jpg)
 
 example: [https://github.com/agassiyzh/Diff-target](https://github.com/agassiyzh/Diff-target)

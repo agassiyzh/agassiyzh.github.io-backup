@@ -19,8 +19,8 @@ published: true
 
 ![qianming][qianming]
 
-[caffeinated]: http://itunes.apple.com/cn/app/caffeinated/id502378856?l=en&mt=12
-[Lucifr]: http://lucifr.com/2011/12/08/caffeinated-another-google-reader-app-for-mac/
-[Reeder]: http://itunes.apple.com/cn/app/reeder/id439845554?l=en&mt=12
-[mainUI]: http://pic.yupoo.com/agassi/BLQh08wT/medium.jpg
-[qianming]: http://pic.yupoo.com/agassi/BM10QWOx/qH25V.png
+[caffeinated]: https://itunes.apple.com/cn/app/caffeinated/id502378856?l=en&mt=12
+[Lucifr]: https://lucifr.com/2011/12/08/caffeinated-another-google-reader-app-for-mac/
+[Reeder]: https://itunes.apple.com/cn/app/reeder/id439845554?l=en&mt=12
+[mainUI]: https://pic.yupoo.com/agassi/BLQh08wT/medium.jpg
+[qianming]: https://pic.yupoo.com/agassi/BM10QWOx/qH25V.png

@@ -7,21 +7,21 @@ categories: Mac
 published: true
 ---
 
-[公司全体员工集体给Macbook pro换上了ssd](http://www.v2ex.com/t/23709)型号是镁光 M4 128G。
+[公司全体员工集体给Macbook pro换上了ssd](https://www.v2ex.com/t/23709)型号是镁光 M4 128G。
 
-![SSD](http://pic.yupoo.com/agassi/BBudd6Ir/medish.jpg)
+![SSD](https://pic.yupoo.com/agassi/BBudd6Ir/medish.jpg)
 
 虽然，我越来越信奉：“优化的第一原则就是：Do't”这句话。
 
 但是，ssd我还是第一次用，对我来说是个新鲜物什。所以w难免要折腾一翻。Google了下"[Mac ssd 优化](https://www.google.com/search?q=mac%20ssd%20%E4%BC%98%E5%8C%96)"，参考了下面几篇文章：
 
-* [Mac OS X 下与 SSD 相关的优化](http://blog.jjgod.org/2010/04/17/macosx-ssd-tweaks/)
+* [Mac OS X 下与 SSD 相关的优化](https://blog.jjgod.org/2010/04/17/macosx-ssd-tweaks/)
 
-* [Mac下优化SSD](http://davidx.me/2011/09/24/optimize-ssd-on-mac/)
+* [Mac下优化SSD](https://davidx.me/2011/09/24/optimize-ssd-on-mac/)
 
-* [纠结ssd寿命的看这里](http://bbs.weiphone.com/read-htm-tid-2499589.html)
+* [纠结ssd寿命的看这里](https://bbs.weiphone.com/read-htm-tid-2499589.html)
 
-* [分享下 SSD for Macbook Pro 的优化](http://hi.baidu.com/omys/blog/item/67fc8a0e3a7d84fd37d1220b.html)
+* [分享下 SSD for Macbook Pro 的优化](https://hi.baidu.com/omys/blog/item/67fc8a0e3a7d84fd37d1220b.html)
 
 ## 性能优化
 
@@ -33,15 +33,15 @@ published: true
 
 ### 四开三关Trim
 
-![Trim2](http://pic.yupoo.com/agassi/BBtg2JqH/medium.jpg 160)
+![Trim2](https://pic.yupoo.com/agassi/BBtg2JqH/medium.jpg 160)
 
-这是一个比较纠结的问题,据[@xinquan](http://weibo.com/xinquan)说，他用Intel G2的时候，这个功能是系统默认开启的。但是当我们换上镁光M4，Lion下并没有启用。
+这是一个比较纠结的问题,据[@xinquan](https://weibo.com/xinquan)说，他用Intel G2的时候，这个功能是系统默认开启的。但是当我们换上镁光M4，Lion下并没有启用。
 
-网上有一个小软件[Tril enabler](http://www.groths.org/?p=308)可以强制开启。但是这个东西网上现在众说纷纭。
+网上有一个小软件[Tril enabler](https://www.groths.org/?p=308)可以强制开启。但是这个东西网上现在众说纷纭。
 
 我第一次开启感觉删除东西明显变慢了，偶尔有卡顿的感觉。开机从一朵半变成了5朵。
 
-最后在[Trim enabler](http://www.groths.org/?p=308)的留言中我找到了这么一句话：
+最后在[Trim enabler](https://www.groths.org/?p=308)的留言中我找到了这么一句话：
 
 <blockquote>
 <p>TRIM is ALWAYS preferred over Garbage Collection and will likely yield better results. If you have garbage collection, you don’t necessarily need TRIM, but it’ll probably offer better performance and there’s always a chance there’ll be a degradation of speed over time. Therefore, when using Garbage Collection, you may have to take the drive out and do a secure erase so that everything is re-marked as free space.
@@ -144,16 +144,16 @@ $sudo tmutil disablelocal
 
 ### 清理垃圾
 
-跟[@xinquan](http://weibo.com/xinquan)在Mac app store上买了个[Disk Diet](http://itunes.apple.com/cn/app/disk-diet/id445512770?l=en&mt=12)。清理垃圾还是很方便的。
+跟[@xinquan](https://weibo.com/xinquan)在Mac app store上买了个[Disk Diet](https://itunes.apple.com/cn/app/disk-diet/id445512770?l=en&mt=12)。清理垃圾还是很方便的。
 
-![](http://pic.yupoo.com/agassi/BBtg3niP/medish.jpg)
+![](https://pic.yupoo.com/agassi/BBtg3niP/medish.jpg)
 
 ## 拆下来的硬盘怎么办？
 我们都买了硬盘盒（ORICO 2598US），样子不错银白款的盒mac比较搭。重点是拆卸方便。
 
-![](http://www.orico.com.cn/images/20117122844739.jpg)
+![](https://www.orico.com.cn/images/20117122844739.jpg)
 
 ## 关于双硬盘 2011-12-21 1:59更新
-[@Sivan](http://www.v2ex.com/member/Sivan)同学问我，如果是双硬盘，光驱位上装的是HDD怎么办，时候该开启紧急运动传感器。
+[@Sivan](https://www.v2ex.com/member/Sivan)同学问我，如果是双硬盘，光驱位上装的是HDD怎么办，时候该开启紧急运动传感器。
 
-[@ywjno](http://www.v2ex.com/member/ywjno)，光驱位是没有紧急运动传感器的。同时给了一篇比较专业的文章：[干掉光驱、拥抱 SSD](http://apple4.us/2011/03/kill-cdrom-embrace-ssd.html)。
+[@ywjno](https://www.v2ex.com/member/ywjno)，光驱位是没有紧急运动传感器的。同时给了一篇比较专业的文章：[干掉光驱、拥抱 SSD](https://apple4.us/2011/03/kill-cdrom-embrace-ssd.html)。

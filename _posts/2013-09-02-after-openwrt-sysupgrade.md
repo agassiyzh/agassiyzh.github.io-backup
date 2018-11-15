@@ -83,9 +83,9 @@ cd /tmp
 
 rm $SYSUPGRADE_BIN_FILE
 
-wget "http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-mw4530r-v1-squashfs-sysupgrade.bin"
+wget "https://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-mw4530r-v1-squashfs-sysupgrade.bin"
 
-wget "http://downloads.openwrt.org/snapshots/trunk/ar71xx/md5sums" -O $TMP_MD5SUMS
+wget "https://downloads.openwrt.org/snapshots/trunk/ar71xx/md5sums" -O $TMP_MD5SUMS
 
 cat $TMP_MD5SUMS | grep $SYSUPGRADE_BIN_FILE > $MW4530R_MD5SUMS
 ```

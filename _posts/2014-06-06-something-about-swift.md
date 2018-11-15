@@ -29,7 +29,7 @@ published: true
 
 >欢迎修改给我提交Pull Request:[Github page: sth about swift][self]
 
-[singleton]: http://stackoverflow.com/questions/24024549/dispatch-once-singleton-model-in-swift#
+[singleton]: https://stackoverflow.com/questions/24024549/dispatch-once-singleton-model-in-swift#
 
 [self]: https://github.com/agassiyzh/agassiyzh.github.io/blob/master/_posts/2014-06-06-something-about-swift.md
 
@@ -37,12 +37,12 @@ published: true
 
 [CococapodsSwift]: https://medium.com/swift-programming/swift-cocoapods-da09d8ba6dd2
 
-[stackoverflow]: http://stackoverflow.com/questions/tagged/swift-language
+[stackoverflow]: https://stackoverflow.com/questions/tagged/swift-language
 
-[lucida]: http://zh.lucida.me/blog/an-introduction-to-swift/
+[lucida]: https://zh.lucida.me/blog/an-introduction-to-swift/
 
 [github-trending]: https://github.com/trending?l=swift
 
-[swift-iOS]: http://swift-ios.co
+[swift-iOS]: https://swift-ios.co
 
 [HDVideos]: /2014/06/09/WWDC-2014-HD-Videos/index.html

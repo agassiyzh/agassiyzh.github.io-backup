@@ -14,4 +14,4 @@ categories: [openwrt]
 
 [Shairport]: https://github.com/abrasive/shairport
 
-[download]: http://d.pr/f/aqOB
+[download]: https://d.pr/f/aqOB

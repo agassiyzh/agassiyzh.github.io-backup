@@ -15,5 +15,5 @@ categories:
 
 现在css文件已经减小的3k啦。
 
-[Bootstrap]: http://getbootstrap.com
-[Ramhost]: http://ramhost.us
+[Bootstrap]: https://getbootstrap.com
+[Ramhost]: https://ramhost.us

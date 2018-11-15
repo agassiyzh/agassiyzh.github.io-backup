@@ -955,6 +955,6 @@ copy方式存储的property（-copy方法也是）都会对这些对象创建一
 
 
 
-[KLUDGE]: http://en.wikipedia.org/wiki/KLUDGE
-[ARC]: http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html
-[v2ex]: http://www.v2ex.com/t/31217
+[KLUDGE]: https://en.wikipedia.org/wiki/KLUDGE
+[ARC]: https://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html
+[v2ex]: https://www.v2ex.com/t/31217

@@ -17,6 +17,6 @@ tags: [Openwrt,Airplay,Shairport]
 提供ar71xx版本的[下载][3]。
 
 
-[shairport blog]: http://blog.yuzhuohui.info/2013/09/02/shairport-for-openwrt-ar71xx/
+[shairport blog]: https://blog.yuzhuohui.info/2013/09/02/shairport-for-openwrt-ar71xx/
 [2]: https://github.com/sm3rt/OpenWRT-ShairPort
-[3]: http://d.pr/f/13n6
+[3]: https://d.pr/f/13n6
