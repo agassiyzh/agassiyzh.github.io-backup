@@ -59,6 +59,9 @@ _顺便，今天是父亲节。深感被叫一声爸爸不容易。吃中饭的�
 
 ## 六月十八日，周二
 
+
+![体温记录](/images/roseola-infantum/IMG_0847.jpeg){:style="width:300px;float: right;margin-right: 7px;margin-top: 7px; margin-left: 15px;"}
+
 尽量详细得记录了一天的数据，早上十点开始退烧。
 
 下午1点把记录的体征在微信发给丁香医生，回复疹子没出来继续观察。
@@ -73,7 +76,9 @@ _顺便，今天是父亲节。深感被叫一声爸爸不容易。吃中饭的�
 
 ## 六月二十日，周四
 
-早上起床发现身体和脸部有明显的出疹现象。医生说不痒的话可以继续观察（正常幼儿急疹确实不痒的）。
+早上起床发现身体和脸部有明显的出疹现象。医生说不痒的话可以继续观察（正常幼儿急疹确实不痒的）。终于烧褪疹出！！！
+
+![疹子](/images/roseola-infantum/IMG_0856.jpeg){:style="width:200px;float: right;margin-right: 7px;margin-top: 7px; margin-left: 15px;"}
 
 ## 六月二十一日，周五
 
