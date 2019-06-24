@@ -17,6 +17,8 @@ categories: vim
 
 不同的语言需要单独配置，需要看看```syntax_checkers```目录下面相应的语言的配置。python需要安装```["flake8", "pyflakes", "pylint"]```其中一个。
 
+<!-- more -->
+
 我装了flake8:
 
 	$sudo pip install flake8

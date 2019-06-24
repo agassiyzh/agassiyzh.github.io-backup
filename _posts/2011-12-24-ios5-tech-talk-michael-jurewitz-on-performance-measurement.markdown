@@ -16,6 +16,8 @@ categories:
 
 在这次大会中，Michael详细的讲解了如何用 Instrument来发现三种常常会遇到的性能问题。总的来说，我非常喜欢这次谈话。我回顾了之前关于Instrument的一些介绍，你必须看每个demo两三次才能入门。但是这次我清楚得感觉到我学了不少东西。
 
+<!-- more -->
+
 ## 一般建议：
 
 <p class="has-pullquote pullquote-adelle" data-pullquote="“最重要的测试性能问题的技术就是真正得去测试它，而不是猜测”">

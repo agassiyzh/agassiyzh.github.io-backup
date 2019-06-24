@@ -13,6 +13,8 @@ published: true
 
 相较之下caffeinated的界面更加小清新一点。目前功能很全。快捷键也很全，自定义也很方便。Reeder最近加入的功能，收藏到Safari的Reader List也有。和instapaper，read later，Readablity也整合了。
 
+<!-- more -->
+
 ![mainUI][mainUI]
 
 签名很帅

@@ -14,6 +14,8 @@ categories: xcode
 
 在不同的target中设置不同的预处理宏，然后在代码中根据宏来编码。
 
+<!-- more -->
+
 ----
 
 ## 创建新的target

@@ -23,6 +23,8 @@ comments: true
   3. 不影响保修
   4. 得益于Fusion Drive，系统会判断哪些文件需要放在较快的SSD上面。
 
+  <!-- more -->
+
 ## Fusion Drive
 
 组建Fusion Drive其实很简单，前提是你要会使用命令行。具体操作可以参考MacWorld的这片文章：

@@ -9,6 +9,8 @@ categories: iOS
 
 一边整理一边写单元测试来确定新添加的方法是执行正确的。其中有一个方法死活通不过。这个方法中我使用了```NSBundle```来获取app中打包进去的资源。但是调试发现根本无法定位资源。
 
+<!-- more -->
+
 后来在[stackoverfolow][stackoverfolow]中看到是```[NSBundle mainBundle]```这个方法出的问题。Apple官方文档中对这个方法的解释是：
 
 >	This method allocates and initializes a bundle object if one doesn’t already exist. The new object corresponds to the directory where the application executable is located. Be sure to check the return value to make sure you have a valid bundle. This method may return a valid bundle object even for unbundled applications.
