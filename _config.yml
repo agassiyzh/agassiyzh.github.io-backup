@@ -12,6 +12,8 @@ author: "於卓慧"
 language: zh-Hans
 date_format: '%Y-%m-%d'
 
+repository: agassiyzh/agassiyzh.github.io
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
 url:
