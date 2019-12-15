@@ -12,6 +12,8 @@ author: "於卓慧"
 language: zh-Hans
 date_format: '%Y-%m-%d'
 
+repository: agassiyzh/agassiyzh.github.io
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
 url:
@@ -436,7 +438,7 @@ gitalk:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification: W-Z_UfcsZSiJR2ZFCxND94xhOTbdv3ztLpLc3E9wyS0
 
 # Google Analytics
 google_analytics: UA-13148173-4

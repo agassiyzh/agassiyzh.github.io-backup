@@ -10,6 +10,8 @@ tags: [xcode,git]
 
 上图的这个版本信息不是我手工加的，而是xcode编译的时候自动生成的。上图中我吧git最近得tag作为CFBundleVersion（Bulid），把最近得一个commit得SAH1作为CFBundleShortVersionString（Version）。
 
+<!-- more -->
+
 首先我们添加一个Bulid phase：
 ![](https://pic.yupoo.com/agassi/BR09I5Zt/ScyD8.png setting)
 

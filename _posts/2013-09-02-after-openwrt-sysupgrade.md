@@ -9,6 +9,8 @@ tags: [sysupgrade, openwrt, mw4530r]
 
 然后我就写了个脚本，每次升级后，自动安装需要的软件，把服务启动起来。这样每次sysupgrade也就只剩下一条命令的事情了。
 
+<!-- more -->
+
 ```shell
 #!/bin/sh
 

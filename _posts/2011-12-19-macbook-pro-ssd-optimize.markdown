@@ -23,6 +23,8 @@ published: true
 
 * [分享下 SSD for Macbook Pro 的优化](https://hi.baidu.com/omys/blog/item/67fc8a0e3a7d84fd37d1220b.html)
 
+<!-- more -->
+
 ## 性能优化
 
 ### 关闭紧急运动传感器(Sudden Motion Sensor)

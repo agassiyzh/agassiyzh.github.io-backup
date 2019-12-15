@@ -11,6 +11,8 @@ categories:
 
 今天蛋疼搞了一下GoAgent，太神啦。好快！用的是[@ohdarling88][ohdarling88]老爷的牛屄GUI客户端[GoAgentx][GoAgentx]，带部署GAE服务功能，还支持ssh什么的。反正你们去看看就知道了。
 
+<!-- more -->
+
 ![GUI][GUI]
 
 搞定以后上了一下测试了一下[bitsnoop][bitsnoop],竟然跳转到127.0.0.1了。各种调试无果，心想GoAgent不会有这个诡异的情况吧。结果关了GoAgent就好了。Google了一下，很多人碰到了这个问题。有人说是google“封”了bitsnoop。

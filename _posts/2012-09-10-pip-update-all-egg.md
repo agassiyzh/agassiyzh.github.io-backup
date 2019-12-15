@@ -14,7 +14,9 @@ google后找到了这么一条命令（跟我一样蛋疼的人不少Y(^_^)Y）�
 
 用了一下提示：
 > Could not find any downloads that satisfy the requirement bonjour-py in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python
-No distributions at all found for bonjour-py in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python
+> No distributions at all found for bonjour-py in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python
+
+<!-- more -->
 
 猜想这个```bonjour-py```是Mac特有的在pypi中找不到的缘故。然后用
 

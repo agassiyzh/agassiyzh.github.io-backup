@@ -21,6 +21,8 @@ published: true
 
 7. [WWDC14 Sessions HD Videos][HDVideos]
 
+<!-- more -->
+
 ## project
 
 1. [`RxSwift`][RxSwift]: ReactiveCocoa作者新开的swift项目

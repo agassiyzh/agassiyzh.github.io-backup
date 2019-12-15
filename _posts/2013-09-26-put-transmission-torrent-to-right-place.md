@@ -11,6 +11,8 @@ tags: [Transmission]
 
 PS：XBMC太好用了不知道的Google吧。
 
+<!-- more -->
+
 这是手机XBMC的截图，各种信息很全
 
 ![剧集列表](https://pic.yupoo.com/agassi/DbVjR445/medish.jpg)

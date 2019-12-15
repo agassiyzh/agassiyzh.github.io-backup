@@ -8,6 +8,8 @@ published: true
 
 自从Apple推出`iPhone 6 Plus`后为了对其适配完美在做图片的时候又多了一种尺寸也就是`@3x`的。虽然新生代神器`Sketch`可以方便存成不同尺寸的图片，但是不可否认的是Photoshop在设计师心目中的神圣地位目前还是不可撼动的。为了提高工作效率我希望有一个工具或者流程可以在设计师给我一张6倍（2和3的最小公倍数）大小的图片后自动缩放生成2和3倍大小的图片。之前想过用拖拽（Drag & Drop）的方式来实现，最近了解到OS X有Finder Action的功能可以更加方便/适合做这个事情。
 
+<!-- more -->
+
 > Folder Actions is a feature of OS X that lets you associate AppleScript scripts with folders. A Folder Action script is executed when the folder to which it is attached is opened or closed, moved or resized, or has items added or removed. The script provides a handler that matches the appropriate format for the action, as described in this chapter.
 > Folder Actions make it easy to create hot folders that respond to external actions to trigger a workflow. For example, you can use a Folder Action script to initiate automated processing of any photo dropped in a targeted folder. A well written Folder Action script leaves the hot folder empty. This avoids repeated application of the action to the same files, and allows Folder Actions to perform more efficiently.
 > _from:[Apple Developer][1]_

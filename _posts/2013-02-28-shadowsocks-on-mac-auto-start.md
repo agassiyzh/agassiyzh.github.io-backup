@@ -13,6 +13,8 @@ tags: shadowsocks
 
 [GoAgentX]中用到的是[Python]版本的[shadowsocks],我想用[nodejs]版本的。还有就是我觉得[shadowsocks]这样的神工具应该是在开机到关机一直在后台运行的。虽然[GoAgentX]也可以开机启动，但是每次启动要允许防火墙输入密码什么的。
 
+<!-- more -->
+
 于是做了一个开机启动的plist：
 
 {% gist 5020877 %}

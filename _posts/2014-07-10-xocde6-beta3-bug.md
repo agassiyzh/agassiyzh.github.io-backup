@@ -15,6 +15,8 @@ fatal error: invalid virtual filesystem overlay file '/[Long-path-goes-here]/all
 
 ![xcode6 beta3 bug](/images/xcode-beta3-bug.png)
 
+<!-- more -->
+
 通过问Google在[Stackoverflow: Xcode 6 beta 3: invalid virtual filesystem overlay file][stackoverflow]找到了解决办法。
 
 原因是Xcode在编译生成`all-product-headers.yaml`的时候格式有错误，最后两个括号没有括回去。
