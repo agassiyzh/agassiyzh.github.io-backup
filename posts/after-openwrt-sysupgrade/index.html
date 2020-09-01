@@ -1,0 +1,78 @@
+<!doctype html><html lang=zn-cn><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="小於"><title>after openwrt sysupgrade ｜ 小於的宅基地</title><meta name=description content="每次升级Openwrt后，之前装的ipk就没有了（现在用的是Openwrt官方的bin）。这个让我很苦恼。最主要的是像我我这样的手贱版本党。有时候会远程通过web或者ssh升级系统。这样升级后由于没有了ddns模块，我就对我的路由失去控制权了。需要回到家才能配置好。
+然后我就写了个脚本，每次升级后，自动安装需要的软件，把服务启动起来。这样每次sysupgrade也就只剩下一条命令的事情了。"><meta name=keywords content="技术,园艺,Iot,生活,感悟,育儿"><link rel="shortcut icon" href=http://localhost:1313/images/favicon.ico><link rel=stylesheet type=text/css media=screen href=http://localhost:1313/css/normalize.css><link rel=stylesheet type=text/css media=screen href=https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css><link rel=stylesheet type=text/css media=screen href=http://localhost:1313/css/zozo.css><link rel=stylesheet type=text/css media=screen href=http://localhost:1313/css/customize.css><link rel=stylesheet type=text/css media=screen href=https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css><link rel=stylesheet type=text/css media=screen href=http://localhost:1313/css/highlight.css></head><body><div class="main animate__animated animate__fadeInDown"><div class="nav_container animated fadeInDown"><div class=site_nav id=site_nav><ul><li><a href=/>Home</a></li><li><a href=/posts/>Archive</a></li><li><a href=/tags/>Tags</a></li><li><a href=/about/>About</a></li></ul></div><div class=menu_icon><a id=menu_icon><i class=ri-menu-line></i></a></div></div><div class="header animated fadeInDown"><div class=site_title_container><div class=site_title><h1><a href=http://localhost:1313/><span>小於的宅基地</span></a></h1></div><div class=description><p class=sub_title>但愿每次回忆都不觉愧疚</p><div class=my_socials><a href=https://github.com/agassiyzh title=github target=_blank><i class=ri-github-fill></i></a><a href=https://twitter.com/agassi_yzh title=twitter target=_blank><i class=ri-twitter-fill></i></a><a href=http://localhost:1313/index.xml type=application/rss+xml title=rss target=_blank><i class=ri-rss-fill></i></a></div></div></div></div><div class=content><div class=post_page><div class="post animate__animated animate__fadeInDown"><div class="post_title post_detail_title"><h2><a href=/posts/after-openwrt-sysupgrade/>after openwrt sysupgrade</a></h2><span class=date>2013.09.02</span></div><div class="post_content markdown"><p>每次升级Openwrt后，之前装的ipk就没有了（现在用的是Openwrt官方的bin）。这个让我很苦恼。最主要的是像我我这样的手贱版本党。有时候会远程通过web或者ssh升级系统。这样升级后由于没有了ddns模块，我就对我的路由失去控制权了。需要回到家才能配置好。</p><p>然后我就写了个脚本，每次升级后，自动安装需要的软件，把服务启动起来。这样每次sysupgrade也就只剩下一条命令的事情了。</p><div class=highlight><pre class=chroma><code class=language-shell data-lang=shell><span class=cp>#!/bin/sh
+</span><span class=cp></span>
+<span class=nv>LOCK_DIR</span><span class=o>=</span>/opt/var/lock
+<span class=nv>LOG_DIR</span><span class=o>=</span>/opt/var/log
+
+<span class=nv>LOCK_FILE</span><span class=o>=</span><span class=nv>$LOCK_DIR</span>/first_boot.lock
+
+<span class=nv>LOG_FILE</span><span class=o>=</span><span class=nv>$LOG_DIR</span>/after-sysupgrede.log
+
+<span class=k>if</span> <span class=o>[</span> -d <span class=nv>$LOCK_DIR</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span>
+    mkdir -p <span class=nv>$LOCK_DIR</span>
+<span class=k>fi</span>
+
+<span class=k>if</span> <span class=o>[</span> -d <span class=nv>$LOG_DIR</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span>
+    mkdir -p <span class=nv>$LOG_DIR</span>
+<span class=k>fi</span>
+
+<span class=nv>INSTALL_IPK</span><span class=o>=</span><span class=s2>&#34;kmod-usb-audio\
+</span><span class=s2>    luci\
+</span><span class=s2>    luci-app-ddns\
+</span><span class=s2>    luci-app-qos\
+</span><span class=s2>    luci-app-upnp\
+</span><span class=s2>    luci-i18n-chinese&#34;</span>
+
+<span class=nv>SERVICE</span><span class=o>=</span><span class=s2>&#34;dbus avahi-daemon shairport&#34;</span>
+
+
+<span class=k>if</span> <span class=o>[[</span> -f <span class=nv>$LOCK_FILE</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
+    <span class=nb>exit</span> <span class=m>0</span>
+<span class=k>fi</span>
+
+opkg update &gt;&gt; <span class=nv>$LOG_FILE</span>
+
+<span class=k>if</span> <span class=o>[[</span> <span class=nv>$?</span> -ne <span class=m>0</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
+    <span class=nb>echo</span> <span class=s2>&#34;update failed&#34;</span> &gt;&gt; <span class=nv>$LOG_FILE</span>
+    <span class=nb>exit</span> <span class=m>1</span>
+<span class=k>fi</span>
+
+opkg install <span class=nv>$INSTALL_IPK</span> &gt;&gt; <span class=nv>$LOG_FILE</span>
+
+opkg install /root/shairport_2013-08-28_ar71xx.ipk
+
+<span class=k>for</span> x in <span class=nv>$SERVICE</span><span class=p>;</span> <span class=k>do</span>
+    /etc/init.d/<span class=nv>$x</span> <span class=nb>enable</span> &gt;&gt; <span class=nv>$LOG_FILE</span>
+    /etc/init.d/<span class=nv>$x</span> start &gt;&gt; <span class=nv>$LOG_FILE</span>
+<span class=k>done</span>
+
+
+/etc/init.d/uhttpd <span class=nb>enable</span>
+/etc/init.d/uhttpd start
+/etc/init.d/dbus <span class=nb>enable</span>
+/etc/init.d/dbus start
+/etc/init.d/avahi-daemon <span class=nb>enable</span>
+/etc/init.d/avahi-daemon start
+/etc/init.d/shairport <span class=nb>enable</span>
+/etc/init.d/shairport start
+
+touch <span class=nv>$LOCK_FILE</span>
+</code></pre></div><p>下载mw4530r sysupgrade bin文件并检查md5脚本:</p><div class=highlight><pre class=chroma><code class=language-shell data-lang=shell><span class=cp>#!/bin/sh
+</span><span class=cp></span>
+<span class=nv>TMP_MD5SUMS</span><span class=o>=</span><span class=s2>&#34;/tmp/openwrt-md5sums&#34;</span>
+<span class=nv>MW4530R_MD5SUMS</span><span class=o>=</span><span class=s2>&#34;/tmp/mw4530r-md5sums&#34;</span>
+<span class=nv>SYSUPGRADE_BIN_FILE</span><span class=o>=</span><span class=s2>&#34;openwrt-ar71xx-generic-mw4530r-v1-squashfs-sysupgrade.bin&#34;</span>
+
+<span class=nb>cd</span> /tmp
+
+rm <span class=nv>$SYSUPGRADE_BIN_FILE</span>
+
+wget <span class=s2>&#34;https://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-mw4530r-v1-squashfs-sysupgrade.bin&#34;</span>
+
+wget <span class=s2>&#34;https://downloads.openwrt.org/snapshots/trunk/ar71xx/md5sums&#34;</span> -O <span class=nv>$TMP_MD5SUMS</span>
+
+cat <span class=nv>$TMP_MD5SUMS</span> <span class=p>|</span> grep <span class=nv>$SYSUPGRADE_BIN_FILE</span> &gt; <span class=nv>$MW4530R_MD5SUMS</span>
+</code></pre></div></div><div class=post_footer><div class=meta><div class=info><span class="field tags"><i class=ri-stack-line></i><a href=http://localhost:1313/tags/sysupgrade/>sysupgrade</a>
+<a href=http://localhost:1313/tags/openwrt/>openwrt</a>
+<a href=http://localhost:1313/tags/mw4530r/>mw4530r</a></span></div></div></div></div><div class=doc_comments></div></div></div></div><a id=back_to_top href=# class=back_to_top><i class=ri-arrow-up-s-line></i></a><footer class=footer><div class=powered_by><a href=https://varkai.com>Designed by VarKai,</a>
+<a href=http://www.gohugo.io/>Proudly published with Hugo</a></div><div class=footer_slogan><span>人生没有白走的路，每一步都算数</span></div></footer><script src=http://localhost:1313/js/jquery-3.5.1.min.js></script><link href=http://localhost:1313/css/fancybox.min.css rel=stylesheet><script src=http://localhost:1313/js/fancybox.min.js></script><script src=http://localhost:1313/js/zozo.js></script><script type=text/javascript async src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({tex2jax:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\[\[','\]\]']],processEscapes:true,processEnvironments:true,skipTags:['script','noscript','style','textarea','pre'],TeX:{equationNumbers:{autoNumber:"AMS"},extensions:["AMSmath.js","AMSsymbols.js"]}}});MathJax.Hub.Queue(function(){var all=MathJax.Hub.getAllJax(),i;for(i=0;i<all.length;i+=1){all[i].SourceElement().parentNode.className+=' has-jax';}});</script><style>code.has-jax{font:inherit;font-size:100%;background:inherit;border:inherit;color:#515151}</style></body></html>

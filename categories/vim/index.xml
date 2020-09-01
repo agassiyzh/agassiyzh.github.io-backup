@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>vim on 小於的宅基地</title><link>http://localhost:1313/categories/vim/</link><description>Recent content in vim on 小於的宅基地</description><generator>Hugo -- gohugo.io</generator><language>zn-cn</language><lastBuildDate>Thu, 30 Aug 2012 14:50:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/vim/index.xml" rel="self" type="application/rss+xml"/><item><title>vim插件推荐：Syntastic</title><link>http://localhost:1313/posts/vim-plugin-syntastic/</link><pubDate>Thu, 30 Aug 2012 14:50:00 +0800</pubDate><guid>http://localhost:1313/posts/vim-plugin-syntastic/</guid><description>&lt;p>早上看到主席大人&lt;a href="https://twitter.com/tualatrix">@TualatriX&lt;/a>老师推荐了&lt;a href="https://https://github.com/scrooloose/syntastic">Syntastic&lt;/a>这个vim插件。&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://https://github.com/scrooloose/syntastic">Syntastic&lt;/a>这个Vim插件真是好东西阿：https://github.com/scrooloose/syntastic 可以每次在保存文件时检查语法和代码。比如Python中定义了一个变量但没有用，就会高亮警告。&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://twitter.com/tualatrix">@TualatriX&lt;/a>&lt;/strong> via Twitter&lt;/p>
+&lt;/blockquote>
+&lt;p>于是用&lt;a href="https://github.com/gmarik/vundle">Vandle&lt;/a>装上。开始无法正常工作，不管是python还是PHP。仔细看了一下doc。&lt;/p>
+&lt;p>不同的语言需要单独配置，需要看看&lt;code>syntax_checkers&lt;/code>目录下面相应的语言的配置。python需要安装&lt;code>[&amp;quot;flake8&amp;quot;, &amp;quot;pyflakes&amp;quot;, &amp;quot;pylint&amp;quot;]&lt;/code>其中一个。&lt;/p></description></item></channel></rss>

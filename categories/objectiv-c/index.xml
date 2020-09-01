@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>objectiv-C on 小於的宅基地</title><link>http://localhost:1313/categories/objectiv-c/</link><description>Recent content in objectiv-C on 小於的宅基地</description><generator>Hugo -- gohugo.io</generator><language>zn-cn</language><lastBuildDate>Sun, 29 Apr 2012 17:22:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/objectiv-c/index.xml" rel="self" type="application/rss+xml"/><item><title>Best Practices for Objective-C Coding</title><link>http://localhost:1313/posts/best-practices-for-objective-c-coding/</link><pubDate>Sun, 29 Apr 2012 17:22:00 +0800</pubDate><guid>http://localhost:1313/posts/best-practices-for-objective-c-coding/</guid><description>&lt;p>&lt;strong>在&lt;a href="https://www.v2ex.com/t/31217">v2ex&lt;/a>有朋友推荐了这篇文章。做了翻译。欢迎纠错和讨论&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>我通常不会在我的blog中写和技术非常相关的东西，但是我希望对Mac和iOS(iPhone &amp;amp; iPad)的开发社区做点贡献。所以，如果你不是apple开发者，自行绕道。&lt;/p>
+&lt;h2 id="介绍">介绍&lt;/h2>
+&lt;p>这篇文章积累了一些多年使用objc这门语言的一些程序员公认为有效的最佳实践。我之所以把它们称作为“戒律”，是因为有很多理由可以证明它们。但是当我把这些实践拿给别的开发者看，他们往往会非常反对。。。&lt;/p></description></item></channel></rss>

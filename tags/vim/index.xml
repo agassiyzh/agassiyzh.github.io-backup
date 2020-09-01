@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>vim on 小於的宅基地</title><link>http://localhost:1313/tags/vim/</link><description>Recent content in vim on 小於的宅基地</description><generator>Hugo -- gohugo.io</generator><language>zn-cn</language><lastBuildDate>Thu, 29 Aug 2013 16:02:05 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/vim/index.xml" rel="self" type="application/rss+xml"/><item><title>vim 7.4</title><link>http://localhost:1313/posts/vim-74/</link><pubDate>Thu, 29 Aug 2013 16:02:05 +0800</pubDate><guid>http://localhost:1313/posts/vim-74/</guid><description>&lt;p>在vim-cn邮件组看到&lt;a href="https://www.vim.org">vim&lt;/a>7.4发布啦！！！！！
+这个版本主要变化包括:&lt;/p>
+&lt;pre>&lt;code>- 新的正则表达式引擎
+- 对诸多 runtime 文件进行了改善
+- 更好的语法加亮及缩进
+&lt;/code>&lt;/pre>
+&lt;p>官网没有下载编译了一个Mac办的cli出来自己用。&lt;/p></description></item></channel></rss>

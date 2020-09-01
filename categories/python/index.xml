@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on 小於的宅基地</title><link>http://localhost:1313/categories/python/</link><description>Recent content in python on 小於的宅基地</description><generator>Hugo -- gohugo.io</generator><language>zn-cn</language><lastBuildDate>Mon, 10 Sep 2012 17:07:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml"/><item><title>pip 更新所有包</title><link>http://localhost:1313/posts/pip-update-all-egg/</link><pubDate>Mon, 10 Sep 2012 17:07:00 +0800</pubDate><guid>http://localhost:1313/posts/pip-update-all-egg/</guid><description>&lt;p>很蛋疼，忽然想吧python中的各种包更新一下。看了pip的各种选项，没有找到更新所有包的命令。&lt;/p>
+&lt;p>google后找到了这么一条命令（跟我一样蛋疼的人不少Y(^_^)Y）。&lt;/p>
+&lt;pre>&lt;code>pip freeze --local | cut -d = -f 1 | sudo xargs pip install -U
+&lt;/code>&lt;/pre>
+&lt;p>用了一下提示：&lt;/p>
+&lt;blockquote>
+&lt;p>Could not find any downloads that satisfy the requirement bonjour-py in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python
+No distributions at all found for bonjour-py in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

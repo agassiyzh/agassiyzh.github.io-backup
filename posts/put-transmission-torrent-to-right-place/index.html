@@ -1,0 +1,44 @@
+<!doctype html><html lang=zn-cn><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="小於"><title>把Transmission下载的资源放在合适的位置 ｜ 小於的宅基地</title><meta name=description content="最近发现其实用Transmission下载资源还是很快的（之前喜欢用Aria2下载迅雷离线，现在作为二手准备）。
+前段时间搞定了订阅RSS，自动下载自己想要的剧集，完成后发邮件通知（后面的Blog中会分享）。渐渐发现我的方案中还有一个点比较烦人，由于我用XBMC来管理播放的我这些影视节目（好处是可以用手机pad来遥控，并且字幕，视屏信息做得非常好），利用XMBC的电视削刮器要求对剧集存放的文件夹归档的井井有条。而Transmission一般都下载在同一个目录中，每次下载完要手动把文件放在该放的位置。下载的东西多了就比较讨厌。
+PS：XBMC太好用了不知道的Google吧。"><meta name=keywords content="技术,园艺,Iot,生活,感悟,育儿"><link rel="shortcut icon" href=http://localhost:1313/images/favicon.ico><link rel=stylesheet type=text/css media=screen href=http://localhost:1313/css/normalize.css><link rel=stylesheet type=text/css media=screen href=https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css><link rel=stylesheet type=text/css media=screen href=http://localhost:1313/css/zozo.css><link rel=stylesheet type=text/css media=screen href=http://localhost:1313/css/customize.css><link rel=stylesheet type=text/css media=screen href=https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css><link rel=stylesheet type=text/css media=screen href=http://localhost:1313/css/highlight.css></head><body><div class="main animate__animated animate__fadeInDown"><div class="nav_container animated fadeInDown"><div class=site_nav id=site_nav><ul><li><a href=/>Home</a></li><li><a href=/posts/>Archive</a></li><li><a href=/tags/>Tags</a></li><li><a href=/about/>About</a></li></ul></div><div class=menu_icon><a id=menu_icon><i class=ri-menu-line></i></a></div></div><div class="header animated fadeInDown"><div class=site_title_container><div class=site_title><h1><a href=http://localhost:1313/><span>小於的宅基地</span></a></h1></div><div class=description><p class=sub_title>但愿每次回忆都不觉愧疚</p><div class=my_socials><a href=https://github.com/agassiyzh title=github target=_blank><i class=ri-github-fill></i></a><a href=https://twitter.com/agassi_yzh title=twitter target=_blank><i class=ri-twitter-fill></i></a><a href=http://localhost:1313/index.xml type=application/rss+xml title=rss target=_blank><i class=ri-rss-fill></i></a></div></div></div></div><div class=content><div class=post_page><div class="post animate__animated animate__fadeInDown"><div class="post_title post_detail_title"><h2><a href=/posts/put-transmission-torrent-to-right-place/>把Transmission下载的资源放在合适的位置</a></h2><span class=date>2013.09.26</span></div><div class="post_content markdown"><p>最近发现其实用Transmission下载资源还是很快的（之前喜欢用Aria2下载迅雷离线，现在作为二手准备）。</p><p>前段时间搞定了订阅RSS，自动下载自己想要的剧集，完成后发邮件通知（后面的Blog中会分享）。渐渐发现我的方案中还有一个点比较烦人，由于我用XBMC来管理播放的我这些影视节目（好处是可以用手机pad来遥控，并且字幕，视屏信息做得非常好），利用XMBC的电视削刮器要求对剧集存放的文件夹归档的井井有条。而Transmission一般都下载在同一个目录中，每次下载完要手动把文件放在该放的位置。下载的东西多了就比较讨厌。</p><p>PS：XBMC太好用了不知道的Google吧。</p><p>这是手机XBMC的截图，各种信息很全</p><p><img src=https://pic.yupoo.com/agassi/DbVjR445/medish.jpg alt=剧集列表></p><p><img src=https://pic.yupoo.com/agassi/DbVjR8Nn/medish.jpg alt=选择单集观看></p><p><img src=https://pic.yupoo.com/agassi/DbVjRcbN/medish.jpg alt=单集信息></p><p><img src=https://pic.yupoo.com/agassi/DbVjWkp7/medish.jpg alt=演员信息></p><p><img src=https://pic.yupoo.com/agassi/DbVjVMhU/medish.jpg alt=控制面板></p><p>我现在的存放结构是这样的</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>├── Books
+├── Downloads
+├── Movies
+│   ├── Amour.2012.BDrip.XviD.AC3.MULTISUBS-XaW
+│   ├── Before.Sunrise.1995.720p.WEB-DL.AAC.2.0.H.264-HDStar 
+│   ├── ……
+├── Series
+│   ├── Adventure Time
+│   │   └── Season 03
+│   ├── Broke.Girls
+│   │   └── Season 03
+│   ├── Brooklyn
+│   ├── Brooklyn Nine Nine
+│   │   └── Season 01
+│   ├── Downton.Abbey
+│   │   └── Season 04
+│   ├── Hanzawa Naoki
+│   ├── Hell on Wheels
+│   │   └── Season 01
+│   ├── House of Cards(2013)
+│   │   └── Season 01
+│   ├── Masters of sex
+│   │   └── Season 01
+│   │       └── Subs
+│   ├── Modern.Family
+│   │   ├── Season 01
+│   │   │   └── Subs
+│   │   ├── Season 02
+│   │   │   └── Subs
+│   │   ├── Season 03
+│   │   │   └── Subs
+│   │   └── Season 05
+│   ├── Sleepy Hollow
+│   │   └── Season 01
+│   └── The White Queen
+│       └── Season 01
+│           └── Subs
+└── WWDC2013
+</code></pre></div><p><code>Downloads</code>是下载文件夹，<code>Moives</code>是电影目录，<code>Series</code>是剧集文件夹，<code>Series</code>按照不同的剧创建各自的文件夹，然后每个剧下面按照季分文件夹。</p><p>电视削刮器规则可以参考<a href=https://bbs.htpc1.com/thread-65704-1-5.html>[教程] XBMC中文电视剧资料库使用说明</a></p><p>目前国内主流的视频提供网站（比如<a href=https://www.yyets.com>人人影视</a>）提供的视频文件的文件名，命名还算是比较好的。应该是有一套约定俗成的命名规则。</p><p>比如：</p><pre><code>纸牌屋.House.Of.Cards.2013.S01E01.Chi_Eng.HR-BluRay.AC3.1024X512.x264-YYeTs人人影视.mkv
+</code></pre><p>首先来判断是剧集还是电影，如果是电影的直接放在电影文件夹。</p><p>判断的规则就是类似<code>S01E01</code>这样的季号号集号。</p><div class=highlight><pre class=chroma><code class=language-shell data-lang=shell><span class=nb>echo</span> <span class=nv>$name</span><span class=p>|</span> grep -Ei <span class=s2>&#34;s[0-9]+e[0-9]+&#34;</span>
+</code></pre></div><p>然后就是把剧的英文名取出来（TVDB的削刮器不认中文的）。拼成目录的。</p><p>思路有了，一开始我用Transmission配置中下载完成的脚本来做的。下载完成后MV到正确的文件夹，但是这样做的坏处是强硬得把视频移走后就不能上传分享了（这样有违<code>人人为我，我为人人</code>的P2P精神）。</p><p>下面提供的这个脚本是利用crontab定时通过<code>transmission-remote</code>取下载的信息。发现还没有下载完成的直接用<code>transmission-remote --move</code>来修改文件下载位置（还没有下载完成的时候放在.incompleted文件夹中，减少噪音）。</p><p>脚本还有不足的地方欢迎大家指导。</p><script type=application/javascript src=https://gist.github.com/agassiyzh/6713607.js></script></div><div class=post_footer><div class=meta><div class=info><span class="field tags"><i class=ri-stack-line></i><a href=http://localhost:1313/tags/transmission/>Transmission</a></span></div></div></div></div><div class=doc_comments></div></div></div></div><a id=back_to_top href=# class=back_to_top><i class=ri-arrow-up-s-line></i></a><footer class=footer><div class=powered_by><a href=https://varkai.com>Designed by VarKai,</a>
+<a href=http://www.gohugo.io/>Proudly published with Hugo</a></div><div class=footer_slogan><span>人生没有白走的路，每一步都算数</span></div></footer><script src=http://localhost:1313/js/jquery-3.5.1.min.js></script><link href=http://localhost:1313/css/fancybox.min.css rel=stylesheet><script src=http://localhost:1313/js/fancybox.min.js></script><script src=http://localhost:1313/js/zozo.js></script><script type=text/javascript async src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({tex2jax:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\[\[','\]\]']],processEscapes:true,processEnvironments:true,skipTags:['script','noscript','style','textarea','pre'],TeX:{equationNumbers:{autoNumber:"AMS"},extensions:["AMSmath.js","AMSsymbols.js"]}}});MathJax.Hub.Queue(function(){var all=MathJax.Hub.getAllJax(),i;for(i=0;i<all.length;i+=1){all[i].SourceElement().parentNode.className+=' has-jax';}});</script><style>code.has-jax{font:inherit;font-size:100%;background:inherit;border:inherit;color:#515151}</style></body></html>
