@@ -1,0 +1,3 @@
+[submodule "zozo"]
+	path = themes/zozo
+	url = https://github.com/agassiyzh/hugo-theme-zozo
